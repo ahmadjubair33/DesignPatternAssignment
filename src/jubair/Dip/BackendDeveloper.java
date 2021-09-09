@@ -1,5 +1,4 @@
 package jubair.Dip;
-
 public class BackendDeveloper implements Developer {
 
     @Override
@@ -9,7 +8,6 @@ public class BackendDeveloper implements Developer {
 
     private void writeJava() {
     }
-
 }
 
 

@@ -1,14 +1,9 @@
 package jubair.SRP;
-
-
 class DeliveryApp {
-
     private Order order;
     public DeliveryApp(Order order) { this.order = order; }
-
     public void delivery()
     {
-
         System.out.println("Delivering the order");
         System.out.println(
                 "Order with order id as "

@@ -1,9 +1,6 @@
 package jubair.SRP;
-
 import java.util.Random;
-
 class Order {
-
     private Customer customer;
     private String orderId;
     private String itemName;
@@ -13,16 +10,12 @@ class Order {
     public Customer getCustomer() {
         return customer;
     }
-    public void setCustomer(Customer customer)
-    {
-
+    public void setCustomer(Customer customer){
         this.customer = customer;
     }
     public String getOrderId() { return orderId; }
-    public void setOrderId(String orderId)
-    {
+    public void setOrderId(String orderId){
         Random random = new Random();
-
         this.orderId = orderId + "-" + random.nextInt(500);
     }
     public String getItemName() { return itemName; }
@@ -32,8 +25,7 @@ class Order {
         setOrderId(itemName);
     }
     public int getQuantity() { return quantity; }
-    public void setQuantity(int quantity)
-    {
+    public void setQuantity(int quantity){
         this.quantity = quantity;
     }
     public int getTotalBillAmt() { return totalBillAmt; }
@@ -41,9 +33,7 @@ class Order {
     {
         this.totalBillAmt = totalBillAmt;
     }
-
-    public void prepareOrder()
-    {
+    public void prepareOrder(){
         System.out.println("Preparing order for customer -"
                 + this.getCustomer().getName()
                 + " who has ordered "
